@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/20888053/pexels-photo-20888053/free-photo-of-scenic-mountain-in-swiss-alps.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  width="300px" alt="no image">
+
+    <!-- <img src= "./image.png"  width="300px" alt="no image"> -->
+
+ <!-- <picture>
+        <source media="(min-width: 650px)" serset="./image.png" />
+        <source media="(min-width: 460px)" serset="./image.png" />
+        <img src="./image.png" alt="">
+ </picture> -->
+
+
+    <!-- an image map generator -->
+    <img src="image.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="one()" target="" alt="" title="" href="" coords="149,212,58" shape="circle">
+        <area onclick="two()" target="" alt="" title="" href="" coords="502,122,500,35,584,35,585,124" shape="poly">
+    </map>
+  <script>
+    function one(){
+        alert("You clicked one one")
+    }
+    function two(){
+        alert("The sky is beautiful; isn't it ?")
+    }
+  </script>
+</body>
+</html>
